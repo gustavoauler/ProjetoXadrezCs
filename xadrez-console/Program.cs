@@ -1,6 +1,5 @@
 ﻿
 using xadrez_console;
-using xadrez_console.tabuleiro;
 using xadrez_console.xadrez;
 
 internal class Program
@@ -8,21 +7,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        try
-        {
-            Tabuleiro tab = new Tabuleiro(8, 8);
+        PosicaoXadrez pos = new PosicaoXadrez ('c', 7);
+        Console.WriteLine(pos);
 
-            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 9));
-            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
-
-
-            Tela.ImprimirTabuleiro(tab);
-        }
-        catch(TabuleiroException ex) {
-
-            Console.WriteLine(ex.Message);
-        }
+        Console.WriteLine(pos.ToPosicao());
 
     }
 }
