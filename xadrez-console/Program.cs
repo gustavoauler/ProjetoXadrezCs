@@ -47,6 +47,8 @@ internal class Program
                 }
 
             }
+            Console.Clear();
+            Tela.ImprimirPartida(partida);
 
 
         }
