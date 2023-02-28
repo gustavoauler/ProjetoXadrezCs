@@ -28,7 +28,7 @@ namespace xadrez_console.xadrez
         {
             bool[,] mat = new bool[Tabuleiro.Linhas, Tabuleiro.Colunas];
 
-            Posicao pos = new Posicao(0, 0);
+            Posicao pos = new Posicao(0,0);
 
 
             //acima

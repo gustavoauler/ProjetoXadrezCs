@@ -92,6 +92,8 @@ namespace xadrez_console
                         Console.BackgroundColor = fundoOriginal;
                     }
                     ImprimirPeca(tabuleiro.Peca(i, j));
+                    Console.BackgroundColor = fundoOriginal;
+
                 }
                 Console.WriteLine();
             }
